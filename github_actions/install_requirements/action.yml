@@ -43,6 +43,7 @@ runs:
     # TODO: Install OptiX
 
     - name: Clone setup_cuda repository (Windows)
+      shell: bash
       if: ${{ runner.os != 'Linux' }}
       run: git clone https://github.com/Silverlan/setup_cuda.git
 
